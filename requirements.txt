@@ -1,1 +1,40 @@
 Webpack
+1. npm init -y
+{
+  "name": "excel-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbiadrytski/excel-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nbiadrytski/excel-course/issues"
+  },
+  "homepage": "https://github.com/nbiadrytski/excel-course#readme"
+}
+
+2. npm install webpack webpack-cli --save-dev
+
+3. In package.json update to:
+"scripts": {
+    "start": "webpack --mode=development",
+    "build": "webpack --mode=production"
+  }
+
+4. Test scripts:
+- npm run start
+- npm run build  (folder dist/main.bundle.js is created with the contents of index.js)
+
+5. Install html webpack plugin
+npm install --save-dev html-webpack-plugin
+
+6. Install copy-webpack-plugin to copy favicon.ico to dist folder
+npm install copy-webpack-plugin --save-dev
