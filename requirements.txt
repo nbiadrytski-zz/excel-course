@@ -38,3 +38,36 @@ npm install --save-dev html-webpack-plugin
 
 6. Install copy-webpack-plugin to copy favicon.ico to dist folder
 npm install copy-webpack-plugin --save-dev
+
+7. Install sass loader
+npm install sass-loader sass --save-dev
+
+8. Install mini-css-extract-plugin
+npm install --save-dev  mini-css-extract-plugin
+
+9. install css-loader
+npm install -D css-loader
+
+10. To be compatible even with old browsers
+npm install --save-dev babel-loader @babel/core
+
+11. npm install @babel/preset-env --save-dev
+
+12. npm i regenerator-runtime core-js@3.9.0
+
+13. Install dev server
+npm install webpack-dev-server --save-dev
+
+14. Install linter
+npm install eslint-webpack-plugin --save-dev
+npm install eslint --save-dev
+
+15. npm install @babel/eslint-parser --save-dev
+
+16. Google style guide
+npm install --save-dev eslint-config-google
+
+17. Install eslint globally
+npm i -g eslint
+Auto-fix lint issues in webpack.config.js and src folder:
+eslint --fix webpack.config.js src
