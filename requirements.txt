@@ -1,3 +1,7 @@
+Git:
+To push: git push -u origin webpack
+In webstorm: Command + K to commit and Command + shift + K to push
+
 Webpack
 1. npm init -y
 {
