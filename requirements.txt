@@ -75,3 +75,5 @@ npm install --save-dev eslint-config-google
 npm i -g eslint
 Auto-fix lint issues in webpack.config.js and src folder:
 eslint --fix webpack.config.js src
+
+18. npm install normalize.css

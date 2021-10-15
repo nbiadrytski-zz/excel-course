@@ -41,8 +41,12 @@ module.exports = (env, argv) => {
     target: 'web', // browser page is auto updated without server restart
     context: path.resolve(__dirname, 'src'),
     entry: {
-      // entry point
-      main: './index.js'
+      main: [
+        'core-js/stable',
+        'regenerator-runtime/runtime',
+        // entry point
+        './index.js'
+      ],
     },
     output: {
       path: path.resolve(__dirname, 'dist'),
@@ -55,16 +59,16 @@ module.exports = (env, argv) => {
       // no need to write file.js when importing, just file
       extensions: ['.js'],
       alias: {
-        // when importing, src folder will just @
+        // when importing, src folder will be just @
         '@': path.resolve(__dirname, 'src'),
-        '@core': path.resolve(__dirname, 'core'),
+        '@core': path.resolve(__dirname, 'src', 'core'),
       }
     },
     devServer: {
       port: '3000',
       open: true,
       // hot: true
-      watchContentBase: true
+      // watchContentBase: true
     },
     // see in which file changes were made
     devtool: isDev ? 'source-map' : false,
