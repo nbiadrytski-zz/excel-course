@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import '~normalize.css'; // points to node_modules folder
+
+@import 'header';
+@import 'toolbar';
+@import 'formula';
+@import 'table';
+@import "dashboard";
+
+// * apply for all elements
+* {
+  margin: 0; // space around elements
+  padding: 0; // space inside elements
+  box-sizing: border-box; // include padding and border in element width and height
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+.excel {
+  position: relative;  // внутренние блоки отталкиваются от родительского excel
+  color: #888;
+  height: 100%;
+  max-width: 100%; // не должен принимать больше чем ширина экрана (для горизонтальн скрола)
+  font-size: .8rem;
+;
+}
