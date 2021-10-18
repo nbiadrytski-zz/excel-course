@@ -29,7 +29,7 @@ function toChar(_, index) {
 }
 
 export function createTable(rowsCount = 15) {
-  const columnsCount = CODES.Z - CODES.A + 1 // + 1 is needed for Z
+  const columnsCount = CODES.Z - CODES.A + 1 // + 1 is needed for Z char
   const rows = []
 
   const columns = new Array(columnsCount)
